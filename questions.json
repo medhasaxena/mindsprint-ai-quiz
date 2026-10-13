@@ -1,0 +1,818 @@
+[
+  {
+    "id": 1,
+    "topic": "AI Foundations",
+    "format": "MCQ",
+    "difficulty": "Easy",
+    "question": "Which statement best describes Artificial Intelligence?",
+    "options": [
+      "Making machines perform tasks that normally require human intelligence",
+      "Only storing large amounts of data",
+      "Connecting computers to the internet",
+      "Designing computer hardware only"
+    ],
+    "answer": 0,
+    "explanation": "AI develops systems that perform tasks such as reasoning, learning, perception, and decision-making.",
+    "hint": "Identify what the question asks and compare each option against its stated conditions."
+  },
+  {
+    "id": 2,
+    "topic": "AI Applications",
+    "format": "Scenario-based",
+    "difficulty": "Easy",
+    "question": "A hospital system analyses X-rays and flags images that may show a tumour for a doctor to review. Which AI capability is most directly involved?",
+    "options": [
+      "Computer vision",
+      "Word processing",
+      "File compression",
+      "Network routing only"
+    ],
+    "answer": 0,
+    "explanation": "Computer vision helps systems interpret images. The system supports clinicians rather than replacing medical judgement.",
+    "hint": "Identify the task the system is performing and what input it uses."
+  },
+  {
+    "id": 3,
+    "topic": "Turing Test",
+    "format": "MCQ",
+    "difficulty": "Easy",
+    "question": "What is the central idea of the Turing Test?",
+    "options": [
+      "Check whether a machine's conversational responses can be distinguished from a human's",
+      "Measure a computer's storage capacity",
+      "Check whether a robot can lift a heavy object",
+      "Measure internet speed"
+    ],
+    "answer": 0,
+    "explanation": "In the imitation-game setup, a judge communicates through text and tries to distinguish the machine from a human.",
+    "hint": "Identify what the question asks and compare each option against its stated conditions."
+  },
+  {
+    "id": 4,
+    "topic": "Turing Test",
+    "format": "True/False",
+    "difficulty": "Easy",
+    "question": "Passing the Turing Test proves that a machine has consciousness.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "explanation": "The test concerns observable conversational behaviour; passing it does not establish consciousness.",
+    "hint": "Identify what the question asks and compare each option against its stated conditions."
+  },
+  {
+    "id": 5,
+    "topic": "Rational Agents",
+    "format": "MCQ",
+    "difficulty": "Easy",
+    "question": "A rational agent chooses an action primarily to:",
+    "options": [
+      "Maximise expected performance according to its performance measure",
+      "Always repeat its previous action",
+      "Use the most complicated algorithm",
+      "Avoid collecting percepts"
+    ],
+    "answer": 0,
+    "explanation": "Rationality means choosing actions expected to perform well given the percepts, knowledge, and available actions.",
+    "hint": "Identify what the question asks and compare each option against its stated conditions."
+  },
+  {
+    "id": 6,
+    "topic": "Intelligent Agents",
+    "format": "Fill in the Blank",
+    "difficulty": "Easy",
+    "question": "An agent receives information from its environment through _____ and affects the environment through actuators.",
+    "options": [
+      "Sensors",
+      "Compilers",
+      "Databases",
+      "Schedulers"
+    ],
+    "answer": 0,
+    "explanation": "Sensors gather percepts from the environment; actuators carry out actions.",
+    "input_type": "text",
+    "accepted_answers": [
+      "sensors",
+      "sensor"
+    ],
+    "answer_display": "Sensors",
+    "hint": "Identify what the question asks and compare each option against its stated conditions."
+  },
+  {
+    "id": 7,
+    "topic": "Agents and Environments",
+    "format": "MCQ",
+    "difficulty": "Easy",
+    "question": "In a robot vacuum cleaner, which item is an actuator?",
+    "options": [
+      "A wheel motor that moves the robot",
+      "A dirt sensor",
+      "A camera used to perceive obstacles",
+      "A microphone used to detect sound"
+    ],
+    "answer": 0,
+    "explanation": "An actuator performs an action on the environment; a motor moves the robot.",
+    "hint": "Separate information-gathering components from action-producing components."
+  },
+  {
+    "id": 8,
+    "topic": "Good Behaviour",
+    "format": "Scenario-based",
+    "difficulty": "Medium",
+    "question": "A delivery robot detects a pedestrian and slows down, even if that makes the delivery slightly late. Which design goal is most evident?",
+    "options": [
+      "Safe, appropriate action based on the situation",
+      "Maximising speed regardless of risk",
+      "Ignoring percepts",
+      "Random action selection"
+    ],
+    "answer": 0,
+    "explanation": "Good agent behaviour balances its performance measure with safety-relevant information.",
+    "hint": "Identify what the question asks and compare each option against its stated conditions."
+  },
+  {
+    "id": 9,
+    "topic": "Nature of Environments",
+    "format": "MCQ",
+    "difficulty": "Medium",
+    "question": "A chess environment is usually described as fully observable because:",
+    "options": [
+      "The current board position is visible to both players",
+      "The opponent's future move is known",
+      "There are no legal rules",
+      "Moves happen continuously without turns"
+    ],
+    "answer": 0,
+    "explanation": "The board state is visible, although the opponent's future decisions remain uncertain.",
+    "hint": "Consider what the agent can observe and whether the world can change."
+  },
+  {
+    "id": 10,
+    "topic": "Nature of Environments",
+    "format": "MCQ",
+    "difficulty": "Medium",
+    "question": "A self-driving car operating in changing traffic is working in which kind of environment?",
+    "options": [
+      "Dynamic",
+      "Static",
+      "Single-state",
+      "Always deterministic"
+    ],
+    "answer": 0,
+    "explanation": "Traffic and other road users can change while the agent is deciding or acting.",
+    "hint": "Consider what the agent can observe and whether the world can change."
+  },
+  {
+    "id": 11,
+    "topic": "Nature of Environments",
+    "format": "True/False",
+    "difficulty": "Easy",
+    "question": "A deterministic environment is one in which the current state and action determine the next state.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "explanation": "In a deterministic model, the state transition for a given state and action has a single outcome.",
+    "hint": "Consider what the agent can observe and whether the world can change."
+  },
+  {
+    "id": 12,
+    "topic": "AI Applications",
+    "format": "Scenario-based",
+    "difficulty": "Medium",
+    "question": "A streaming service recommends films using a user's viewing history and similar users' preferences. This is an example of:",
+    "options": [
+      "A recommendation system",
+      "A compiler",
+      "A sorting algorithm only",
+      "A file system"
+    ],
+    "answer": 0,
+    "explanation": "Recommendation systems use preference and behaviour signals to rank relevant items.",
+    "hint": "Identify the task the system is performing and what input it uses."
+  },
+  {
+    "id": 13,
+    "topic": "Problems and Problem Spaces",
+    "format": "MCQ",
+    "difficulty": "Easy",
+    "question": "In a search problem, what does the initial state represent?",
+    "options": [
+      "The starting situation before actions are taken",
+      "The required final answer only",
+      "Every possible path combined",
+      "The cost of all actions"
+    ],
+    "answer": 0,
+    "explanation": "The initial state is where the search begins.",
+    "hint": "Identify what the question asks and compare each option against its stated conditions."
+  },
+  {
+    "id": 14,
+    "topic": "Problems and Problem Spaces",
+    "format": "MCQ",
+    "difficulty": "Easy",
+    "question": "A goal test is used to determine whether:",
+    "options": [
+      "A state satisfies the desired goal condition",
+      "The program has enough memory",
+      "An action is always cheap",
+      "The heuristic is random"
+    ],
+    "answer": 0,
+    "explanation": "The goal test checks whether a candidate state meets the problem's goal condition.",
+    "hint": "Identify what the question asks and compare each option against its stated conditions."
+  },
+  {
+    "id": 15,
+    "topic": "State Space Search",
+    "format": "Problem-solving",
+    "difficulty": "Medium",
+    "question": "In a state-space graph, a node represents a state and an edge represents:",
+    "options": [
+      "An action or transition between states",
+      "A performance measure only",
+      "A programming-language keyword",
+      "The final score only"
+    ],
+    "answer": 0,
+    "explanation": "Edges encode possible actions/transitions connecting states.",
+    "hint": "Identify what the question asks and compare each option against its stated conditions."
+  },
+  {
+    "id": 16,
+    "topic": "Production Systems",
+    "format": "Match the Following",
+    "difficulty": "Medium",
+    "question": "A production system commonly represents knowledge as:",
+    "options": [
+      "IF condition THEN action/rule",
+      "Only pictures without rules",
+      "A single unchanging output",
+      "A list of web addresses"
+    ],
+    "answer": 0,
+    "explanation": "Sensors gather percepts, actuators affect the environment, and a goal test checks whether a state meets the target condition.",
+    "match_pairs": [
+      {
+        "left": "Sensor",
+        "right": "Gathers percepts"
+      },
+      {
+        "left": "Actuator",
+        "right": "Acts on the environment"
+      },
+      {
+        "left": "Goal test",
+        "right": "Checks whether a state meets the goal"
+      }
+    ],
+    "hint": "Identify what the question asks and compare each option against its stated conditions."
+  },
+  {
+    "id": 17,
+    "topic": "Production Systems",
+    "format": "Scenario-based",
+    "difficulty": "Medium",
+    "question": "A troubleshooting expert system applies the rule 'IF battery is low THEN recommend charging' when its condition matches. This is an example of:",
+    "options": [
+      "Rule firing in a production system",
+      "Depth-first backtracking only",
+      "A sorting operation",
+      "A map projection"
+    ],
+    "answer": 0,
+    "explanation": "When a rule's condition matches the current facts, the rule can fire and trigger its conclusion/action.",
+    "hint": "Identify what the question asks and compare each option against its stated conditions."
+  },
+  {
+    "id": 18,
+    "topic": "Problem Characteristics",
+    "format": "MCQ",
+    "difficulty": "Medium",
+    "question": "Why does it matter whether a problem is decomposable?",
+    "options": [
+      "It affects whether the problem can be split into smaller subproblems",
+      "It tells us the screen resolution",
+      "It guarantees every search is optimal",
+      "It removes the need for a goal test"
+    ],
+    "answer": 0,
+    "explanation": "Decomposable problems can sometimes be solved by solving smaller parts and combining their results.",
+    "hint": "Identify what the question asks and compare each option against its stated conditions."
+  },
+  {
+    "id": 19,
+    "topic": "Search Program Design",
+    "format": "MCQ",
+    "difficulty": "Medium",
+    "question": "Why should a search algorithm track explored states in many graph-search problems?",
+    "options": [
+      "To avoid repeatedly expanding already explored states and reduce loops",
+      "To make every heuristic admissible",
+      "To guarantee zero memory use",
+      "To change the goal state"
+    ],
+    "answer": 0,
+    "explanation": "An explored set can prevent repeated work and infinite cycling in graphs.",
+    "hint": "Identify what the question asks and compare each option against its stated conditions."
+  },
+  {
+    "id": 20,
+    "topic": "BFS",
+    "format": "MCQ",
+    "difficulty": "Easy",
+    "question": "Breadth-First Search (BFS) expands nodes in which order?",
+    "options": [
+      "Level by level, in increasing depth",
+      "Always the deepest node first",
+      "Lowest heuristic value only",
+      "Random order"
+    ],
+    "answer": 0,
+    "explanation": "BFS uses a FIFO queue and explores shallower nodes before deeper ones.",
+    "hint": "Think about how a queue determines which frontier node is processed first."
+  },
+  {
+    "id": 21,
+    "topic": "BFS",
+    "format": "Problem-solving",
+    "difficulty": "Medium",
+    "question": "A tree has start node S with children A and B; A has children C and D; B has child E. With children visited left-to-right, what is BFS order?",
+    "options": [
+      "S, A, B, C, D, E",
+      "S, A, C, D, B, E",
+      "S, B, E, A, D, C",
+      "S, C, A, B, D, E"
+    ],
+    "answer": 0,
+    "explanation": "BFS visits S, then its depth-1 children A and B, then depth-2 nodes C, D and E.",
+    "hint": "Think about how a queue determines which frontier node is processed first."
+  },
+  {
+    "id": 22,
+    "topic": "BFS",
+    "format": "MCQ",
+    "difficulty": "Medium",
+    "question": "When all step costs are equal, BFS can find:",
+    "options": [
+      "A shallowest goal path, which is also a minimum-step path",
+      "Only the deepest goal",
+      "A path with minimum heuristic value in every case",
+      "No path in a finite graph"
+    ],
+    "answer": 0,
+    "explanation": "For equal step costs, a shallowest solution also minimises the number of steps.",
+    "hint": "Think about how a queue determines which frontier node is processed first."
+  },
+  {
+    "id": 23,
+    "topic": "DFS",
+    "format": "MCQ",
+    "difficulty": "Easy",
+    "question": "Depth-First Search (DFS) typically explores:",
+    "options": [
+      "One branch deeply before backtracking",
+      "All nodes at depth 1 before depth 2",
+      "Only nodes with the lowest h(n)",
+      "Only the start state"
+    ],
+    "answer": 0,
+    "explanation": "DFS follows one branch as far as possible, then backtracks.",
+    "hint": "Consider what happens to the current branch before another branch is explored."
+  },
+  {
+    "id": 24,
+    "topic": "DFS",
+    "format": "Problem-solving",
+    "difficulty": "Medium",
+    "question": "A tree has S children A and B; A has children C and D. If DFS visits children left-to-right, what is the first three nodes visited?",
+    "options": [
+      "S, A, C",
+      "S, B, A",
+      "S, C, A",
+      "A, S, C"
+    ],
+    "answer": 0,
+    "explanation": "DFS starts at S, follows its left child A, then follows A's left child C.",
+    "hint": "Consider what happens to the current branch before another branch is explored."
+  },
+  {
+    "id": 25,
+    "topic": "BFS vs DFS",
+    "format": "Assertion–Reason",
+    "difficulty": "Medium",
+    "question": "Assertion: BFS is complete on a finite branching graph when duplicate states are handled appropriately. Reason: BFS systematically explores all shallower levels before deeper levels.",
+    "options": [
+      "Both Assertion and Reason are true, and Reason explains Assertion",
+      "Both are true, but Reason does not explain Assertion",
+      "Assertion is true, Reason is false",
+      "Assertion is false, Reason is true"
+    ],
+    "answer": 0,
+    "explanation": "On a finite branching search with appropriate duplicate handling, systematic level-by-level exploration reaches a reachable goal.",
+    "hint": "Identify what the question asks and compare each option against its stated conditions."
+  },
+  {
+    "id": 26,
+    "topic": "Iterative Deepening",
+    "format": "MCQ",
+    "difficulty": "Medium",
+    "question": "Iterative Deepening Search repeatedly runs depth-limited DFS while:",
+    "options": [
+      "Increasing the depth limit",
+      "Decreasing the branching factor",
+      "Changing the initial state randomly",
+      "Sorting states by path cost"
+    ],
+    "answer": 0,
+    "explanation": "The depth limit is increased step by step until a goal is found or another stopping condition applies.",
+    "hint": "Identify what the question asks and compare each option against its stated conditions."
+  },
+  {
+    "id": 27,
+    "topic": "Iterative Deepening",
+    "format": "Scenario-based",
+    "difficulty": "Medium",
+    "question": "A search tree is very deep, its solution depth is unknown, and memory is limited. Which uninformed strategy is often a useful choice?",
+    "options": [
+      "Iterative deepening search",
+      "Store every generated node in a large queue",
+      "Greedy search with no heuristic information",
+      "Random restart only"
+    ],
+    "answer": 0,
+    "explanation": "Iterative deepening combines DFS-like memory use with systematic exploration of increasing depth limits.",
+    "hint": "Identify what the question asks and compare each option against its stated conditions."
+  },
+  {
+    "id": 28,
+    "topic": "Hill Climbing",
+    "format": "MCQ",
+    "difficulty": "Easy",
+    "question": "Hill climbing chooses a next state mainly by:",
+    "options": [
+      "Moving to a neighbouring state that improves the evaluation",
+      "Exploring every state level by level",
+      "Always choosing the oldest node in a queue",
+      "Using no evaluation function"
+    ],
+    "answer": 0,
+    "explanation": "Hill climbing repeatedly moves to a better neighbouring state according to an evaluation function.",
+    "hint": "Think about how the algorithm compares neighbouring states."
+  },
+  {
+    "id": 29,
+    "topic": "Hill Climbing",
+    "format": "MCQ",
+    "difficulty": "Medium",
+    "question": "A hill-climbing algorithm stops at a state that is better than all its neighbours but is not globally best. This state is a:",
+    "options": [
+      "Local maximum",
+      "Goal test",
+      "FIFO queue",
+      "Complete search tree"
+    ],
+    "answer": 0,
+    "explanation": "A local maximum is better than neighbouring states but may be worse than a distant global maximum.",
+    "hint": "Think about how the algorithm compares neighbouring states."
+  },
+  {
+    "id": 30,
+    "topic": "Hill Climbing Variations",
+    "format": "MCQ",
+    "difficulty": "Medium",
+    "question": "Which variation selects a random improving neighbour rather than always selecting the best one?",
+    "options": [
+      "Stochastic hill climbing",
+      "Breadth-first search",
+      "Uniform-cost search",
+      "Iterative deepening"
+    ],
+    "answer": 0,
+    "explanation": "Stochastic hill climbing chooses among improving moves probabilistically or randomly.",
+    "hint": "Focus on how the method chooses among improving moves or escapes a plateau."
+  },
+  {
+    "id": 31,
+    "topic": "Hill Climbing Variations",
+    "format": "Scenario-based",
+    "difficulty": "Medium",
+    "question": "A hill-climbing search gets stuck on a plateau. Which strategy may help it explore beyond the current region?",
+    "options": [
+      "Allow limited sideways moves or restart from a new state",
+      "Never evaluate neighbours again",
+      "Delete the goal condition",
+      "Use a FIFO queue without changing the algorithm"
+    ],
+    "answer": 0,
+    "explanation": "Sideways moves can cross some plateaus; random-restart hill climbing explores a different starting region.",
+    "hint": "Focus on how the method chooses among improving moves or escapes a plateau."
+  },
+  {
+    "id": 32,
+    "topic": "Heuristic Search",
+    "format": "MCQ",
+    "difficulty": "Easy",
+    "question": "A heuristic function h(n) estimates:",
+    "options": [
+      "The remaining cost or distance from node n to a goal",
+      "The exact path already travelled in every problem",
+      "The number of computer users",
+      "The size of the program file"
+    ],
+    "answer": 0,
+    "explanation": "A heuristic estimates how far a state is from a goal or how costly the remaining path may be.",
+    "hint": "Recall what an estimate of the remaining work tells a search procedure."
+  },
+  {
+    "id": 33,
+    "topic": "Heuristic Search",
+    "format": "MCQ",
+    "difficulty": "Medium",
+    "question": "For a minimisation problem, an admissible heuristic is one that:",
+    "options": [
+      "Never overestimates the true remaining optimal cost",
+      "Always overestimates the true remaining cost",
+      "Is always equal to zero at every node",
+      "Depends on random numbers only"
+    ],
+    "answer": 0,
+    "explanation": "Admissibility means h(n) is no greater than the true optimal cost from n to a goal.",
+    "hint": "Recall what an estimate of the remaining work tells a search procedure."
+  },
+  {
+    "id": 34,
+    "topic": "Best First Search",
+    "format": "MCQ",
+    "difficulty": "Medium",
+    "question": "Greedy Best-First Search commonly selects the frontier node with the smallest:",
+    "options": [
+      "Heuristic estimate h(n)",
+      "Path cost so far g(n) only",
+      "Depth in all cases",
+      "Alphabetical label"
+    ],
+    "answer": 0,
+    "explanation": "Greedy Best-First Search prioritises estimated closeness to the goal using h(n).",
+    "hint": "Compare the evaluation values used to prioritise frontier nodes."
+  },
+  {
+    "id": 35,
+    "topic": "Best First Search",
+    "format": "Problem-solving",
+    "difficulty": "Medium",
+    "question": "The frontier contains A with h(A)=7, B with h(B)=2, and C with h(C)=5. Greedy Best-First Search selects which node next?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "All three simultaneously"
+    ],
+    "answer": 1,
+    "explanation": "Greedy Best-First Search selects the frontier node with the smallest heuristic value, which is 2 for B.",
+    "hint": "Compare the evaluation values used to prioritise frontier nodes."
+  },
+  {
+    "id": 36,
+    "topic": "A* Search",
+    "format": "MCQ",
+    "difficulty": "Medium",
+    "question": "A* search evaluates a node using which function?",
+    "options": [
+      "f(n) = g(n) + h(n)",
+      "f(n) = g(n) − h(n)",
+      "f(n) = g(n) × h(n) only",
+      "f(n) = h(n) − depth(n)"
+    ],
+    "answer": 0,
+    "explanation": "A* combines the path cost already incurred, g(n), with the estimated remaining cost, h(n).",
+    "hint": "Identify what the question asks and compare each option against its stated conditions."
+  },
+  {
+    "id": 37,
+    "topic": "CSP",
+    "format": "MCQ",
+    "difficulty": "Easy",
+    "question": "A Constraint Satisfaction Problem (CSP) is usually defined by:",
+    "options": [
+      "Variables, domains, and constraints",
+      "Only a start node and a queue",
+      "Sensors and actuators only",
+      "A training set and a loss function only"
+    ],
+    "answer": 0,
+    "explanation": "CSPs specify variables, their possible values (domains), and restrictions on combinations of values.",
+    "hint": "Identify the choices that must be made and the rules that restrict those choices."
+  },
+  {
+    "id": 38,
+    "topic": "CSP",
+    "format": "Scenario-based",
+    "difficulty": "Easy",
+    "question": "A timetable assigns courses to rooms and time slots, with no lecturer allowed to teach two classes at once. The 'no lecturer double-booking' rule is a:",
+    "options": [
+      "Constraint",
+      "Heuristic value",
+      "Sensor",
+      "Goal-independent action"
+    ],
+    "answer": 0,
+    "explanation": "The rule restricts which combinations of timetable assignments are allowed.",
+    "hint": "Identify the choices that must be made and the rules that restrict those choices."
+  },
+  {
+    "id": 39,
+    "topic": "CSP",
+    "format": "Problem-solving",
+    "difficulty": "Medium",
+    "question": "In a map-colouring CSP, adjacent regions must have different colours. If regions X and Y share a border, which assignment is valid?",
+    "options": [
+      "X = red, Y = red",
+      "X = blue, Y = blue",
+      "X = red, Y = green",
+      "X has no colour and Y = green"
+    ],
+    "answer": 2,
+    "explanation": "Adjacent regions must receive different colours, so red and green satisfies the stated constraint.",
+    "hint": "Identify the choices that must be made and the rules that restrict those choices."
+  },
+  {
+    "id": 40,
+    "topic": "CSP",
+    "format": "MCQ",
+    "difficulty": "Medium",
+    "question": "In a CSP, what does the domain of a variable contain?",
+    "options": [
+      "The possible values that variable may take",
+      "All constraints in the entire problem only",
+      "The final solution path only",
+      "The order in which nodes are expanded"
+    ],
+    "answer": 0,
+    "explanation": "A domain lists the legal candidate values for a variable before considering all interactions with other assignments.",
+    "hint": "Identify the choices that must be made and the rules that restrict those choices."
+  },
+  {
+    "id": 41,
+    "topic": "Means-End Analysis",
+    "format": "MCQ",
+    "difficulty": "Medium",
+    "question": "Means-End Analysis solves a problem by:",
+    "options": [
+      "Comparing the current state with the goal and reducing the differences",
+      "Choosing actions without considering the goal",
+      "Expanding every node in alphabetical order",
+      "Removing all subgoals"
+    ],
+    "answer": 0,
+    "explanation": "Means-End Analysis identifies differences between current and goal states and selects operators to reduce them.",
+    "hint": "Compare the present situation with the desired situation."
+  },
+  {
+    "id": 42,
+    "topic": "Means-End Analysis",
+    "format": "Scenario-based",
+    "difficulty": "Medium",
+    "question": "You need to submit a printed report, but you only have a digital file. You identify 'printing the file' as the step that reduces the difference between your current situation and the goal. This illustrates:",
+    "options": [
+      "Means-End Analysis",
+      "Depth-limited search only",
+      "A fully observable environment",
+      "A local maximum"
+    ],
+    "answer": 0,
+    "explanation": "The chosen action is an operator intended to reduce the difference between the current state and the goal state.",
+    "hint": "Compare the present situation with the desired situation."
+  },
+  {
+    "id": 43,
+    "topic": "AI Applications",
+    "format": "Scenario-based",
+    "difficulty": "Medium",
+    "question": "A bank's fraud-monitoring system flags an unusual transaction based on amount, location and spending pattern for further review. This is an example of AI used for:",
+    "options": [
+      "Anomaly detection and fraud screening",
+      "Image rendering only",
+      "Manual file naming",
+      "Operating-system booting"
+    ],
+    "answer": 0,
+    "explanation": "Fraud systems can identify patterns that differ from expected behaviour; flags should be reviewed with appropriate safeguards.",
+    "hint": "Identify the task the system is performing and what input it uses."
+  },
+  {
+    "id": 44,
+    "topic": "AI Applications",
+    "format": "Scenario-based",
+    "difficulty": "Medium",
+    "question": "A farmer uses a model that analyses crop images and weather data to identify possible plant disease early. Which description fits best?",
+    "options": [
+      "AI-assisted agricultural monitoring",
+      "A production rule unrelated to data",
+      "A search tree with no goal",
+      "A text editor feature"
+    ],
+    "answer": 0,
+    "explanation": "Image and weather analysis can support crop monitoring and early disease detection.",
+    "hint": "Identify the task the system is performing and what input it uses."
+  },
+  {
+    "id": 45,
+    "topic": "AI Applications",
+    "format": "Scenario-based",
+    "difficulty": "Medium",
+    "question": "A customer-support chatbot answers common questions and transfers complex cases to a human agent. Which benefit is illustrated?",
+    "options": [
+      "Automating routine support while allowing escalation",
+      "Guaranteeing every answer is correct",
+      "Removing all need for human oversight",
+      "Making the environment fully deterministic"
+    ],
+    "answer": 0,
+    "explanation": "A chatbot can handle routine queries while escalating uncertain or complex issues.",
+    "hint": "Identify the task the system is performing and what input it uses."
+  },
+  {
+    "id": 46,
+    "topic": "AI Applications",
+    "format": "Scenario-based",
+    "difficulty": "Medium",
+    "question": "A city adjusts traffic-light timings using live traffic sensor data. This system most directly uses AI or intelligent-agent ideas for:",
+    "options": [
+      "Adaptive traffic management",
+      "Offline document formatting",
+      "Password hashing only",
+      "Static image compression"
+    ],
+    "answer": 0,
+    "explanation": "Live sensor information can be used to adapt signal decisions to changing traffic conditions.",
+    "hint": "Identify the task the system is performing and what input it uses."
+  },
+  {
+    "id": 47,
+    "topic": "AI Applications",
+    "format": "Scenario-based",
+    "difficulty": "Medium",
+    "question": "An online store detects that a product review may be spam by analysing repeated wording and account behaviour. This is an example of:",
+    "options": [
+      "Pattern classification or anomaly detection",
+      "A deterministic board game",
+      "A physical actuator",
+      "A state with no observations"
+    ],
+    "answer": 0,
+    "explanation": "Text and behaviour patterns can help classify suspicious reviews, though false positives are possible.",
+    "hint": "Identify the task the system is performing and what input it uses."
+  },
+  {
+    "id": 48,
+    "topic": "Search and Environments",
+    "format": "Assertion–Reason",
+    "difficulty": "Medium",
+    "question": "Assertion: DFS can use less frontier memory than BFS on many tree searches. Reason: DFS generally stores the current path and pending alternatives, while BFS stores a broad frontier.",
+    "options": [
+      "Both Assertion and Reason are true, and Reason explains Assertion",
+      "Both are true, but Reason does not explain Assertion",
+      "Assertion is true, Reason is false",
+      "Assertion is false, Reason is true"
+    ],
+    "answer": 0,
+    "explanation": "DFS often has memory proportional to search depth and pending alternatives, while BFS can retain many nodes at a level.",
+    "hint": "Identify what the question asks and compare each option against its stated conditions."
+  },
+  {
+    "id": 49,
+    "topic": "Problem-solving",
+    "format": "Problem-solving",
+    "difficulty": "Hard",
+    "question": "A search tree has branching factor 3. The goal is first found at depth 2. With root at depth 0, how many nodes are in a full tree through depth 2?",
+    "options": [
+      "9",
+      "12",
+      "13",
+      "15"
+    ],
+    "answer": 2,
+    "explanation": "The levels contain 1 node at depth 0, 3 at depth 1, and 9 at depth 2; total = 1 + 3 + 9 = 13.",
+    "hint": "Identify what the question asks and compare each option against its stated conditions."
+  },
+  {
+    "id": 50,
+    "topic": "Integrated AI",
+    "format": "Scenario-based",
+    "difficulty": "Hard",
+    "question": "A route planner knows the current road network, estimates remaining distance with a heuristic, and considers travel cost already incurred. Which search method combines these two cost components?",
+    "options": [
+      "A* search",
+      "Plain DFS",
+      "Simple hill climbing",
+      "Iterative deepening without costs"
+    ],
+    "answer": 0,
+    "explanation": "A* evaluates nodes using f(n)=g(n)+h(n), combining path cost so far and estimated remaining cost.",
+    "hint": "Identify what the question asks and compare each option against its stated conditions."
+  }
+]
